@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trello Board</title>
+        <link rel="stylesheet" href="external/reset.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/trello-dashboard.css">
+        <link rel="stylesheet" href="css/trello-board.css">
+        <!--
+            Downloaded from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="pointer">
+                    <i class="home fas fa-home"></i>
+                </li>
+                <li class="pointer">
+                    <i class="boards fas fa-th-list"></i>
+                    Boards
+                </li>
+                <li class="menu-input">
+                    <input type="text" />
+                </li>
+            </ul>
+            <div class="app-title">
+                Tralala
+            </div>
+            <div class="actions">
+                <span class="pointer">
+                    <i class="fas fa-plus" id="add-board"></i>
+                </span>
+                <span class="pointer">
+                    <i class="fas fa-user" id="profile-image"></i>
+                </span>
+            </div>
+        </nav>
+        <div class="board-container">
+            <div class="board-menu">
+                <div class="board-title">New board</div>
+                <div class="board-show-menu">
+                    <div class="board-show-menu-inner">
+                        <i class="fas fa-ellipsis-v"></i>
+                        Show menu
+                    </div>
+                    <div class="board-show-menu-items">
+                        <div class="board-show-menu-item delete-selected-task pointer">
+                            <i class="fas fa-times"></i>
+                            Delete selected task
+                        </div>
+                        <div class="board-show-menu-item move-selected-task pointer">
+                            <i class="fas fa-arrows-alt"></i>
+                            Move selected task
+                            <select>
+                                
+                            </select>
+                        </div>
+                        <div class="board-show-menu-item save-board pointer">
+                            <i class="fas fa-save"></i>
+                            Save board
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="task-lists">
+                    <div class="task-lists-wrapper"><div class="add-task-list-wrapper">
+            <div class="add-list">
+                <div class="add-list-message pointer">+ Add list</div>
+                
+            <div class="add-list-form hide">
+                <form>
+                    <textarea rows="3" placeholder="Enter a title for this card..." class="add-list-input full-width-input"></textarea>
+                    <div class="add-list-form-actions">
+                        <button class="btn btn-inline btn-primary add-list-button pointer">Add List</button>
+                        <i class="fas fa-2x fa-times add-list-cancel pointer"></i>
+                    </div>
+                </form>
+            </div>
+        
+            </div>
+        </div></div>
+                    <!-- <div class="add-task-list-wrapper"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="js/trello-dashboard.js" type="module"></script>
+    </body>
+</html>
